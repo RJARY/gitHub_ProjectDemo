@@ -23,6 +23,7 @@ export default class Types extends React.Component {
     
       }
     render(){
+        
         // var repoInfo = this.state.repoData;
         return(
             <React.Fragment>

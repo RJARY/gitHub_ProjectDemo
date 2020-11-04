@@ -23,13 +23,6 @@ export default class App extends React.Component {
     .then(data => this.setState({repoData:data}))
   }
 
-  // languageChange= (e) => {
-  //   var languageKey =e.target.value;
-  //   var repoDataFiltered = this.state.repoData.filter(item =>{return (item.language === languageKey)});
-  //   this.setState({repoData:repoDataFiltered})
-
-  // }
-
   openTab = (tabName) => {
 
     var i;
@@ -116,15 +109,6 @@ export default class App extends React.Component {
         <div id="Repository" className="w3-container tab" >
         <input type="text" className="SearchBox" placeholder="Find a repository..." />
         <span>Type:
-        {/* <select title="Type" className="SelectBox" >
-        <option className="SelectOption" value="All"> All</option>
-        <option className="SelectOption"  value="Public"> Public</option>
-        <option className="SelectOption"  value="Private"> Private</option>
-        <option className="SelectOption"  value="Sources"> Sources</option>
-        <option className="SelectOption"  value="Forks"> Forks</option>
-        <option className="SelectOption"  value="Archived"> Archived</option>
-        <option className="SelectOption"  value="Mirrors"> Mirrors</option>
-        </select> */}
         <Types lang={this.state.repoData} />
         </span>
         <span> Language:
