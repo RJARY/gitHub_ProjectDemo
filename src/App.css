@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: white;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: center; */
+	font-size: 12px;
+	color: black;
+}
+.position-relative {
+	/* position: relative; */
 }
 
-.App-link {
-  color: #61dafb;
+.position-relative input {
+	padding: 10px 10px 10px 30px;
+	margin-top: 14px;
+	border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.position-absolute {
+	/* position: absolute; */
+	top: 60%;
+	left: 70%;
+	transform: translateY(-50%);
+}
+img {
+	border-radius: 50%;
+	margin-left: 20px;
+}
+.tabStyle:active {
+	border-bottom: 1px solid #e34c26;
+	border-width: 2px;
+	display: inline-block;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #24292e;
+}
+.tabs li:hover {
+	border-bottom: 1px solid #e34c26;
+	border-width: 2px;
+}
+.dot {
+	height: 12px;
+  width: 12px;
+  background-color: #E34C26;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top:20px;
+}
+
+li {
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	margin-top: 8px;
+}
+li a:hover {
+	color: rgb(167, 160, 160);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.SearchBox{
+	margin:10px;
+	width: 50%;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+.SelectBox{
+	margin:10px;
+	width: 15%;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+.RepoName {
+	color:#0366D6;
+	font-weight: bold;
+	font-size: 18px;
 }
